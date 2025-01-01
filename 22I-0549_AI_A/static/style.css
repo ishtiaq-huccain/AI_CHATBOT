@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('123.jpg'); /* replace 'background_image.jpg' with your actual background image path */
+    background-size: cover;
+}
+
+.container {
+    background-color: rgba(222, 72, 72, 0.8); /* Adjust the alpha value for transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for a subtle effect */
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green color, you can change it to your preference */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   background-color: #4CAF50;
+    
+
+}
+
+button:hover {
+    
+    background-color: #4CAF50;
+
+
+}
+
+div {
+    margin-top: 20px;
+}
+
+/* Style for chat messages */
+p {
+    margin: 5px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+.chatbot
+{
+    text-align: center;
+}
+.send
+{
+    height: 100;
+    width: 100;
+    transition: box-shadow 0.3s ease-in-out; 
+
+}
+.send:hover
+{
+    
+    box-shadow: 5px 5px 15px #333;
+}

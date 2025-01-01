@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css"> <!-- Replace 'styles.css' with your actual CSS file path -->
+    <title>Chatbot Interface</title>
+</head>
+<body>
+    <h1 class="chatbot">Chatbot Interface</h1> 
+    
+    <form method="post" action="{{ url_for('chat') }}">
+        <label for="user_input">User:</label>
+        <input type="text" id="user_input" name="user_input" required>
+        <button class="send" type="submit">Send</button>
+    </form>
+
+    {% if user_input %}
+    <div>
+        <p><strong>User:</strong> {{ user_input }}</p>
+        {% if responses %}
+            {% for response in responses %}
+                <p><strong>Chatbot:</strong> {{ response }}</p>
+            {% endfor %}
+        {% else %}
+            <p><strong>Chatbot:</strong> No response found.</p>
+        {% endif %}
+    </div>
+    {% endif %}
+</body>
+</html>
